@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>VR view</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+    <div id="error" class="dialog">
+      <div class="wrap">
+        <h1 class="title">Error</h1>
+        <p class="message">An unknown error occurred.</p>
+      </div>
+    </div>
+
+    <!--<a id="watermark" href="http://g.co/vr/view" target="_blank">
+      <img src="images/ic_info_outline_black_24dp.svg"/>
+    </a>-->
+
+    <script src="build/vrview-analytics.js"></script>
+	</body>
+	<script>
+
+$(function(){
+	$("img.webvr-button").eq(1).css("width","100%");
+	$("img.webvr-button").eq(1).css("height","100%");
+	$("img.webvr-button").eq(1).css("right","0");
+//	$("img.webvr-button").eq(1).attr("src","loading.png")
+	$("img.webvr-button").eq(0).css("display","none");
+	$("img.webvr-button").eq(2).css("display","none");
+//	$("div img").attr("src","loading.png");
+
+//	$("img.webvr-button").eq(1).trigger("click");
+//	$("img.webvr-button").eq(0).css("display","none");
+//	$("img.webvr-button").eq(1).css("visibility","hidden");
+//	$("img.webvr-button").eq(2).css("display","none");
+//	setInterval($("img.webvr-button").eq(1).trigger("click"),5000);
+})	
+	</script>	
+</html>
